@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+	display: block;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.title {
+	position: absolute;
+	font-size: 88px;
+	color: #454E53;
+	text-transform: uppercase;
+	z-index: 100;
+	font-weight: bold;
+	top: 100px;
+	left: 100px;
+}
+
+.search-container {
+	position: absolute;;
+	width: 400px;
+	height: 60px;
+	background-color: #454E53;
+	z-index: 100;
+	top: 230px;
+	left: 100px;
+	border-radius: 30px;
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	padding-left: 20px; 
+	padding-right: 20px; 
+}
+
+.search-container input {
+	flex-grow: 1;
+	font-size: 25px;
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+
+.search-container input:focus {
+	outline: none;
+}
+
+.search i {
+	font-style: 25px;
+	color: white;
+}
+
+.store-list-container {
+	position: absolute;
+	background-color: white;
+	width: 400px;
+	z-index: 100;
+	height: 300px;
+	top: 120px;
+	border-radius: 30px;
+	bottom: 20px;
+	display: flex;
+	background-color: #454E53;
+}
+
+.stores-list {
+	font-size: 21px;
+	color: #514C4C;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	overflow-y: scroll;
+	color: white;
+}
+	
+.store-phone-number {
+	color: #85ADAD;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	opacity: 0.6;
+	font-size: 16px;
+}
+
+.store-number {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: #85ADAD;
+}
+
+span {
+	display: block;
+}
+
+.store-container-background {
+	display: flex;
+	padding-right: 8px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding-left: 8px;
+	transition: all 0.2s ease-in-out;
+	padding-top: 10px;
+}
+
+.store-container-background:hover{
+	background-color: lightgray;
+	border-radius: 16px;
+}
+
+.store-info-container {
+	flex-grow: 1;
+}
+
+.store-number-container {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: 0;	
+	padding-bottom: 66px;
+}
+
+.store-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #979797;
+	width: 360px;
+}
+
+
+

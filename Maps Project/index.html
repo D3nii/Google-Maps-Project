@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Maps Store Locator</title>
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+    <body>
+
+    	<div class="title">Store Locator</div>
+
+    	<div class="search-container">
+    		<div class="search">
+    			<input type="text" id="zip-code-input" placeholder="Enter zip">
+    			<i class="fas fa-search" onclick="searchStores()"></i>
+    		</div>
+
+    		<div class="store-list-container">
+    			<div class="stores-list">
+    				<div class="store-container">
+    					<div class="store-container-background">
+    						<div class="store-address">
+    							<span>257 S. La Cienega Blvd.</span>
+    							<span></span>
+    						</div>
+	    					<div class="store-phone-number">
+	    						5758-13907
+	    					</div>
+    						<div class="store-number-container">
+    							<div class="store-number">
+    								1
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div id="map"></div>
+
+
+
+    	<script src="js/store-data.js" type="text/javascript"></script>
+    	<script type="text/javascript" src="js/index.js"></script>
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqxATB-p45e5z1ZLJCZ8d0CXqZgapV0y8&callback=initMap" type="text/javascript"></script>
+    </body>
+</html>
